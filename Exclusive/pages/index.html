@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="../css/vendor.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- script
     ================================================== -->
@@ -50,7 +51,7 @@
         <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="shield-plus" viewBox="0 0 16 16">
-        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-10.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 90.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
         <path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="star-fill" viewBox="0 0 16 16">
@@ -95,136 +96,120 @@
 </div>
 
 </div>
-    <div class="search-popup">
-        <div class="search-popup-container">
-
-          <form role="search" method="get" class="search-form" action="">
+<div class="search-popup">
+    <div class="search-popup-container">
+        <button class="search-popup-close">
+            <i class="fa fa-times"></i> <!-- Close button icon -->
+        </button>
+        <form role="search" method="get" class="search-form" action="">
             <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-            <button type="submit" class="search-submit"><svg class="search"><use xlink:href="#search"></use></svg></button>
-          </form>
-
-          <h5 class="cat-list-title">Browse Categories</h5>
-
-          <ul class="cat-list">
+            <button type="submit" class="search-submit">
+                <svg class="search">
+                    <use xlink:href="#search"></use>
+                </svg>
+            </button>
+        </form>
+        <h5 class="cat-list-title">Browse Categories</h5>
+        <ul class="cat-list">
             <li class="cat-list-item">
-              <a href="Desktops.html" title="Desktops">Desktops</a>
+                <a href="Desktops.html" title="Desktops">Desktops</a>
             </li>
             <li class="cat-list-item">
-              <a href="Laptops.html" title="Laptops">Laptops</a>
+                <a href="Laptops.html" title="Laptops">Laptops</a>
             </li>
             <li class="cat-list-item">
-              <a href="Accessories.html" title="Accessories">Accessories</a>
+                <a href="Accessories.html" title="Accessories">Accessories</a>
             </li>
             <li class="cat-list-item">
-              <a href="Monitors.html" title="Monitors">Monitors</a>
+                <a href="Monitors.html" title="Monitors">Monitors</a>
             </li>
             <li class="cat-list-item">
-              <a href="Storage.html" title="Storage">Storage and RAM</a>
+                <a href="Storage.html" title="Storage">Storage and RAM</a>
             </li>
-          </ul>
-
-        </div>
+        </ul>
     </div>
+</div>
 
     <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
-      <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-             <h1 class="text-bg text-primary-emphasis font-weight-bold">𝓜𝙀𝙂𝘼𝙉 𝘾𝙊𝙈𝙋𝙐𝙏𝙀𝙍𝙎</h1>
-          </a>
-          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <svg class="navbar-icon">
-              <use xlink:href="#navbar-icon"></use>
-            </svg>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
-            <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="../Images/megan%20logo.jpeg"width="150" height="75" class="logo">
-              </a>
-              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link me-4 active" href="#billboard">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="Desktops.html">Desktops</a>
-                </li>
+            <a class="navbar-brand" href="#">
+                <img src="../Images/MeganL.png" alt="Megan Computers Logo" class="img-fluid" style=";" WIDTH="150"HEIGHT="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 active" href="#billboard">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Desktops.html">Desktops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Laptops.html">Laptops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Monitors.html">Monitors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Storage.html">Storage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Accessories.html">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="cart.html">Cart</a>
+                        </li>
 
-<!--                To add all products -->
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="Laptops.html">Laptops</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="Monitors.html">Monitors</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="Storage.html">Storage</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="Accessories.html">Accesories</a>
-                </li>
+<!--                        <li class="nav-item dropdown">-->
+<!--                            <a class="nav-link me-4 dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                                Pages-->
+<!--                            </a>-->
+<!--                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                                <li><a href="Desktops.html" class="dropdown-item">Desktops</a></li>-->
+<!--                                <li><a href="Laptops.html" class="dropdown-item">Laptops</a></li>-->
+<!--                                <li><a href="Monitors.html" class="dropdown-item">Monitors</a></li>-->
+<!--                                <li><a href="cart.html" class="dropdown-item">Cart</a></li>-->
+<!--                                <li><a href="Storage.html" class="dropdown-item">Storage</a></li>-->
+<!--                                <li><a href="Accessories.html" class="dropdown-item">Accessories</a></li>-->
+<!--                                 <li>-->
+<!--                                       <a href="cart.html" class="dropdown-item">Cart</a>-->
+<!--                                    </li>-->
+<!--                            </ul>-->
+                        </li>
+                        <li class="nav-item">
+                            <div class="user-items ps-1">
+                                <ul class="d-flex justify-content-end list-unstyled">
+                                    <li class="search-item pe-3">
+                                        <a href="#" class="search-button">
+                                            <svg class="search" aria-hidden="true">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="pe-3">
+                                        <a href="#">
+                                            <svg class="user" aria-hidden="true">
+                                                <use xlink:href="#user"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                <li class="nav-item dropdown">
-<!--                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>-->
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="Desktops.html" class="dropdown-item">Desktops</a>
-                    </li>
-                    <li>
-                      <a href="Laptops.html" class="dropdown-item">Laptops</a>
-                    </li>
-                    <li>
-                      <a href="Monitors.html" class="dropdown-item">Monitors</a>
-                    </li>
-                    <li>
-                      <a href="cart.html" class="dropdown-item">Cart</a>
-                    </li>
-                    <li>
-                      <a href="Storage.html" class="dropdown-item">Storage</a>
-                    </li>
-                    <li>
-                      <a href="Accessories.html" class="dropdown-item">Accessories</a>
-                    </li>
-                    <li>
-                      <a href="cart.html" class="dropdown-item">Cart</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                <div class="user-items ps-1"> <!--  used to be ps-5-->
-                    <ul class="d-flex justify-content-end list-unstyled">
-                      <li class="search-item pe-3">
-                        <a href="#" class="search-button">
-                          <svg class="search">
-                            <use xlink:href="#search"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="pe-3">
-                        <a href="#">
-                          <svg class="user">
-                            <use xlink:href="#user"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cart.html">
-                          <svg class="cart">
-                            <use xlink:href="#cart"></use>
-                          </svg>
-                        </a>
-                      </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
-                  </div>
-                </li>
-              </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
     </header>
 
 
@@ -252,7 +237,7 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-<!--                           <h1 class="text-dark"> <span class="blu">Your # 1<br></span>Christian wear store</h1>-->
+                           <h1 class="text-dark"> <span class="blu">𝑩𝒀𝑻𝑬 𝑰𝑵𝑻𝑶 <br></span>  𝑻𝑯𝑬 𝑳𝑨𝑻𝑬𝑺𝑻 𝑻𝑬𝑪𝑯</h1>
 <!--                           <figure ><img class="img-fluid" src=" images/Shirt one vicory.jpg" alt="#"height="100"width="388"/></figure>-->
                            <a class="read_more" href="shop.html">Shop Now</a>
                         </div>
@@ -263,7 +248,7 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-<!--                           <h1> <span class="blu">Buy</span> and <span class="blu">Customise</span>  <br>Your Wear</h1>-->
+                           <h1> <span class="blu">𝙁𝙐𝙏𝙐𝙍𝙀-𝙋𝙍𝙊𝙊𝙁</span> 𝙔𝙊𝙐𝙍  <span class="blu">𝙏𝙀𝘾𝙃 𝙂𝘼𝙈𝙀</span>  <br>Your Wear</h1>
 <!--                           <figure><img src="images/shirt four.jpg" alt="#"height="100"width="388"/></figure>-->
                            <a class="read_more" href="shop.html">Shop Now</a>
                         </div>
@@ -278,7 +263,7 @@
             </a>
          </div>
       </section>
-    <br>
+    <br><br>
     <section id="company-services" class="padding-large">
       <div class="container">
         <div class="row">
@@ -341,11 +326,82 @@
 <!--    Banner section end-->
 
 
-<!--    Featured products end-->
+
 
     <!--    Featured product start-->
  <section class="Shop">
-              <h2 class="featured-title display-7 text-dark text-uppercase">Featured Products</h2>
+     <div class="myfeatured">
+              <h2 class=" display-7 text-dark text-uppercase">Featured Products</h2>
+         </div>
+      <div class="p-slider">
+         <!--  laptop section start-->
+                   <div class="containerr_rowws">
+                    <div class="rowws">
+                            <div class="coll-4">
+                                <a href="cart.html"><img src="../Images/3.17.jpeg" height="225" width="225"/></a>
+                                <h3>Lenovo x250 Core i5</h3>
+                                <p> Intel Core i5 2.3ghz Core i5 Processor (5th Gen), 4GB RAM, 500GB HDD, 12.5-inch Display </p>
+                                <div class="price-buy">
+                                   <span class="p-price text-decoration-line-through">Ksh 26,999</span>
+                                    <br>
+                                    <h2 class="text-dark"> Ksh 23,999</h2>
+                                    <a href="cart.html"class="cart-btn">
+
+                                    </a>
+                                </div>
+                    <!--            <button class="buy-1">Add to cart</button>-->
+                            </div>
+                            <div class="coll-4">
+                                <a href="cart.html"><img src="../Images/3.12.jpeg" height="225" width="225"/></a>
+                                <h3>Dell 22inch Monitor</h3>
+                                <p> Core i7; Screen Size: 14-Inches; Hard Disk Size:500 GB; RAM Size: 8GB  </p>
+                                <div class="price-buy">
+                                   <span class="p-price text-decoration-line-through">Ksh 26,999</span>
+                                    <br>
+                                    <h2 class="text-dark"> Ksh 23,999</h2>
+
+                            </div>
+                    <!--            <button class="buy-1">Add to cart</button>-->
+                            </div>
+                            <div class="coll-4">
+                                <a href="cart.html"> <img src="../Images/5.18.jpeg" height="225" width="225"/></a>
+                                <h3>Hp 17 inch monitor</h3>
+                                <p>specs  </p>
+                                <div class="price-buy">
+                                    <span class="p-price text-decoration-line-through">Ksh 26,999</span>
+                                    <br>
+                                    <h2 class="text-dark"> Ksh 23,999</h2>
+                                    <a href="cart.html"class="cart-btn">
+
+                                    </a>
+                                </div>
+                    <!--            <button class="buy-1">Add to cart</button>-->
+                            </div>
+                            <div class="coll-4">
+                                <a href="cart.html"><img src="../Images/2.5.png" height="225" width="225"/></a>
+                                <h3>HP 800G1 4TH GEN</h3>
+                                <p>specs  </p>
+                                <div class="price-buy">
+                                    <span class="p-price text-decoration-line-through">Ksh 26,999</span>
+                                    <br>
+                                    <h2 class="text-dark"> Ksh 23,999</h2>
+                                    <a href="cart.html" class="cart-btn">
+
+                                    </a>
+                                </div>
+                    <!--            <button class="buy-1">Add to cart</button>-->
+                            </div>
+
+                    </div>
+
+<!--                        <div class="see-more">-->
+<!--                            <a href="Laptops.html"><button>See more</button></a>-->
+<!--                        </div>-->
+             </div>
+<!--          featured section 2-->
+<!--           <div class="myfeatured">-->
+<!--              <h2 class="featured-title display-7 text-dark text-uppercase">Featured Products</h2>-->
+<!--         </div>-->
       <div class="p-slider">
          <!--  laptop section start-->
                    <div class="containerr_rowws">
@@ -413,310 +469,772 @@
              </div>
           <br><br>
 <!--featured section end-->
+ <div class="shop-banner">
+    <div class="container text-center">
+        <h1 class="banner-title">Shop with Us Today!</h1>
+        <p class="banner-subtitle">Discover amazing products and deals just for you.</p>
+        <a href="#products" class="btn btn-shop-now">Shop Now</a>
+    </div>
+</div>
+
+<!--          Laptops section-->
+          <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">Laptops</h2>
+            <div class="btn-right">
+              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
+            </div>
+          </div>
+  <div class="product-section">
+        <div class="container">
+            <div class="scroll-container">
+<!--                <button class="scroll-indicator-left">&#9664;</button>-->
+<!--                <button class="scroll-indicator-right">&#9654;</button>-->
+                <div class="row flex-nowrap">
+                    <!-- Product Card 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">A cutting-edge smartphone with the latest technology.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 7990.99</span>
+                                    <span class="discounted-price">Ksh 6990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Headphones</h5>
+                                <p class="card-text">High-quality headphones for a premium audio experience.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptop</h5>
+                                <p class="card-text">A powerful laptop with advanced features for all your needs.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 10990.99</span>
+                                    <span class="discounted-price">Ksh 8990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text">A sleek smartwatch with all the essential features for your lifestyle.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Bluetooth Speaker</h5>
+                                <p class="card-text">Enjoy high-quality sound with this portable Bluetooth speaker.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1490.99</span>
+                                    <span class="discounted-price">Ksh 990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Action Camera</h5>
+                                <p class="card-text">Capture your adventures with this high-definition action camera.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 2990.99</span>
+                                    <span class="discounted-price">Ksh 2490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!--          Laptops section end-->
+          <br>
+
+<!--          Desktop section start-->
+           <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">Desktops</h2>
+            <div class="btn-right">
+              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
+            </div>
+          </div>
+          <div class="product-section">
+        <div class="container">
+            <div class="scroll-container">
+<!--                <button class="scroll-indicator-left">&#9664;</button>-->
+<!--                <button class="scroll-indicator-right">&#9654;</button>-->
+                <div class="row flex-nowrap">
+                    <!-- Product Card 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">A cutting-edge smartphone with the latest technology.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 7990.99</span>
+                                    <span class="discounted-price">Ksh 6990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Headphones</h5>
+                                <p class="card-text">High-quality headphones for a premium audio experience.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptop</h5>
+                                <p class="card-text">A powerful laptop with advanced features for all your needs.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 10990.99</span>
+                                    <span class="discounted-price">Ksh 8990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text">A sleek smartwatch with all the essential features for your lifestyle.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Bluetooth Speaker</h5>
+                                <p class="card-text">Enjoy high-quality sound with this portable Bluetooth speaker.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1490.99</span>
+                                    <span class="discounted-price">Ksh 990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Action Camera</h5>
+                                <p class="card-text">Capture your adventures with this high-definition action camera.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 2990.99</span>
+                                    <span class="discounted-price">Ksh 2490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          <br><br><br><br>
+<!--          Desktop section end-->
+<!--Latest products section 1-->
+           <h2 class="featured-title display-7 text-dark text-uppercase">Latest products</h2>
+          <br>
+           <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">New products</h2>
+            <div class="btn-right">
+              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
+            </div>
+          </div>
+<!--          <div class="container mt-5 position-relative">-->
+<!--&lt;!&ndash;         Scroll Indicators&ndash;&gt;-->
+<!--        <div class="scroll-indicator-left">-->
+<!--            <span></span> &lt;!&ndash; Left arrow icon &ndash;&gt;-->
+        </div>
+        <div class="scroll-indicator-right">
+            <span></span> <!-- Right arrow icon -->
+        </div>
+        <div class="row flex-nowrap overflow-auto">
+            <!-- Product Card 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Gadget</h5>
+                        <p class="card-text">A sleek and modern tech gadget with the latest features.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 4990.99</span>
+                            <span class="discounted-price">Ksh 3490.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">A high-performance smartphone with a stunning display.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 7990.99</span>
+                            <span class="discounted-price">Ksh 6490.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Earbuds</h5>
+                        <p class="card-text">Experience true wireless freedom with these sleek earbuds.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 1990.99</span>
+                            <span class="discounted-price">Ksh 1290.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartwatch</h5>
+                        <p class="card-text">Stay connected and track your health with this stylish smartwatch.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 2990.99</span>
+                            <span class="discounted-price">Ksh 1990.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">A powerful laptop with advanced features for all your needs.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 10990.99</span>
+                            <span class="discounted-price">Ksh 8990.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product-card card mb-4 shadow-sm">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tablet</h5>
+                        <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                        <div class="price">
+                            <span class="original-price">Ksh 5990.99</span>
+                            <span class="discounted-price">Ksh 4990.99</span>
+                        </div>
+                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Product Cards can be added here -->
+        </div>
+    </div>
+<!--          Latest products section 1 end-->
 
 
-<!--          laptop section section-->
-
-<!--    <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-<!--          <div class="display-header d-flex justify-content-between pb-3">-->
-<!--            <h2 class="display-7 text-dark text-uppercase">LAPTOPS</h2>-->
+<!--     Latest products section 2-->
+<!--     <div class="display-header d-flex justify-content-between pb-3">-->
+<!--            <h2 class="display-7 text-dark text-uppercase">New products</h2>-->
 <!--            <div class="btn-right">-->
 <!--              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>-->
 <!--            </div>-->
 <!--          </div>-->
-<!--          <div class="swiper product-swiper">-->
-<!--            <div class="swiper-wrapper">-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="../Images/3.17.jpeg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="cart.html" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Dell 24 INCHE MONITOR</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$980</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/3.17.jpeg" alt="product-item" class="img-fluid" height="97px">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Iphone 11</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$1100</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Iphone 8</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$780</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Iphone 13</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$1500</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Iphone 12</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$1300</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+<!--          <div class="container mt-5 position-relative">-->
+<!--&lt;!&ndash;         Scroll Indicators&ndash;&gt;-->
+<!--        <div class="scroll-indicator-left">-->
+<!--            <span></span> &lt;!&ndash; Left arrow icon &ndash;&gt;-->
 <!--        </div>-->
-<!--      </div>-->
-<!--      <div class="swiper-pagination position-absolute text-center"></div>-->
-<!--    </section>-->
-
-
-
-
-<!--          laptop section end-->
-
-
-
-
-
-<!--    <section id="smart-watches" class="product-store padding-large position-relative">-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-<!--          <div class="display-header d-flex justify-content-between pb-3">-->
-<!--            <h2 class="display-7 text-dark text-uppercase">Smart Watches</h2>-->
-<!--            <div class="btn-right">-->
-<!--              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="swiper product-watch-swiper">-->
-<!--            <div class="swiper-wrapper">-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Pink watch</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$870</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">Heavy watch</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$680</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">spotted watch</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$750</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">black watch</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$650</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="swiper-slide">-->
-<!--                <div class="product-card position-relative">-->
-<!--                  <div class="image-holder">-->
-<!--                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">-->
-<!--                  </div>-->
-<!--                  <div class="cart-concern position-absolute">-->
-<!--                    <div class="cart-button d-flex">-->
-<!--                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="card-detail d-flex justify-content-between pt-3">-->
-<!--                    <h3 class="card-title text-uppercase">-->
-<!--                      <a href="#">black watch</a>-->
-<!--                    </h3>-->
-<!--                    <span class="item-price text-primary">$750</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+<!--        <div class="scroll-indicator-right">-->
+<!--            <span></span> &lt;!&ndash; Right arrow icon &ndash;&gt;-->
 <!--        </div>-->
-<!--      </div>-->
-<!--      <div class="swiper-pagination position-absolute text-center"></div>-->
-<!--    </section>-->
-<!--    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">-->
-<!--      <div class="row d-flex flex-wrap align-items-center">-->
-<!--        <div class="col-md-6 col-sm-12">-->
-<!--          <div class="text-content offset-4 padding-medium">-->
-<!--            <h3>10% off</h3>-->
-<!--            <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>-->
-<!--            <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>-->
-<!--          </div>-->
+<!--        <div class="row flex-nowrap overflow-auto">-->
+<!--            &lt;!&ndash; Product Card 1 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Tech Gadget</h5>-->
+<!--                        <p class="card-text">A sleek and modern tech gadget with the latest features.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 4990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 3490.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Product Card 2 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Smartphone</h5>-->
+<!--                        <p class="card-text">A high-performance smartphone with a stunning display.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 7990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 6490.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Product Card 3 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Wireless Earbuds</h5>-->
+<!--                        <p class="card-text">Experience true wireless freedom with these sleek earbuds.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 1990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 1290.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Product Card 4 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Smartwatch</h5>-->
+<!--                        <p class="card-text">Stay connected and track your health with this stylish smartwatch.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 2990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 1990.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Product Card 5 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Laptop</h5>-->
+<!--                        <p class="card-text">A powerful laptop with advanced features for all your needs.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 10990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 8990.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Product Card 6 &ndash;&gt;-->
+<!--            <div class="col-lg-3 col-md-4 col-sm-6">-->
+<!--                <div class="product-card card mb-4 shadow-sm">-->
+<!--                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Tablet</h5>-->
+<!--                        <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>-->
+<!--                        <div class="price">-->
+<!--                            <span class="original-price">Ksh 5990.99</span>-->
+<!--                            <span class="discounted-price">Ksh 4990.99</span>-->
+<!--                        </div>-->
+<!--                        <a href="cart.html" class="btn add-to-cart-btn">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Additional Product Cards can be added here &ndash;&gt;-->
 <!--        </div>-->
-<!--        <div class="col-md-6 col-sm-12">-->
+<!--    </div>-->
+<!-- Latest products section 2 end-->
 
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section id="latest-blog" class="padding-large">-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-<!--          <div class="display-header d-flex justify-content-between pb-3">-->
-<!--            <h2 class="display-7 text-dark text-uppercase">Latest Posts</h2>-->
-<!--            <div class="btn-right">-->
-<!--              <a href="blog.html" class="btn btn-medium btn-normal text-uppercase">Read Blog</a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="post-grid d-flex flex-wrap justify-content-between">-->
-<!--            <div class="col-lg-4 col-sm-12">-->
-<!--              <div class="card border-none me-3">-->
-<!--                <div class="card-image">-->
-<!--                  <img src="images/post-item1.jpg" alt="" class="img-fluid">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="card-body text-uppercase">-->
-<!--                <div class="card-meta text-muted">-->
-<!--                  <span class="meta-date">feb 22, 2023</span>-->
-<!--                  <span class="meta-category">- Gadgets</span>-->
-<!--                </div>-->
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Get some cool gadgets in 2023</a>-->
-<!--                </h3>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-12">-->
-<!--              <div class="card border-none me-3">-->
-<!--                <div class="card-image">-->
-<!--                  <img src="images/post-item2.jpg" alt="" class="img-fluid">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="card-body text-uppercase">-->
-<!--                <div class="card-meta text-muted">-->
-<!--                  <span class="meta-date">feb 25, 2023</span>-->
-<!--                  <span class="meta-category">- Technology</span>-->
-<!--                </div>-->
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Technology Hack You Won't Get</a>-->
-<!--                </h3>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-12">-->
-<!--              <div class="card border-none me-3">-->
-<!--                <div class="card-image">-->
-<!--                  <img src="images/post-item3.jpg" alt="" class="img-fluid">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="card-body text-uppercase">-->
-<!--                <div class="card-meta text-muted">-->
-<!--                  <span class="meta-date">feb 22, 2023</span>-->
-<!--                  <span class="meta-category">- Camera</span>-->
-<!--                </div>-->
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Top 10 Small Camera In The World</a>-->
-<!--                </h3>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
+
+<!--Banner 2 start-->
+<!--   -->
+<!--     banner 2 end-->
+
+
+<!--spaced grid-->
+<!--          bottom product section-->
+
+
+<!--     Accessories-->
+     <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">Accessories</h2>
+            <div class="btn-right">
+              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
+            </div>
+          </div>
+         <div class="product-section">
+        <div class="container">
+            <div class="scroll-container">
+<!--                <button class="scroll-indicator-left">&#9664;</button>-->
+<!--                <button class="scroll-indicator-right">&#9654;</button>-->
+                <div class="row flex-nowrap">
+                    <!-- Product Card 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">A cutting-edge smartphone with the latest technology.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 7990.99</span>
+                                    <span class="discounted-price">Ksh 6990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Headphones</h5>
+                                <p class="card-text">High-quality headphones for a premium audio experience.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptop</h5>
+                                <p class="card-text">A powerful laptop with advanced features for all your needs.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 10990.99</span>
+                                    <span class="discounted-price">Ksh 8990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text">A sleek smartwatch with all the essential features for your lifestyle.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet</h5>
+                                <p class="card-text">A versatile tablet with a vibrant display for work and play.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 5990.99</span>
+                                    <span class="discounted-price">Ksh 4990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Bluetooth Speaker</h5>
+                                <p class="card-text">Enjoy high-quality sound with this portable Bluetooth speaker.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1490.99</span>
+                                    <span class="discounted-price">Ksh 990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Action Camera</h5>
+                                <p class="card-text">Capture your adventures with this high-definition action camera.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 2990.99</span>
+                                    <span class="discounted-price">Ksh 2490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Product Section (Bottom) -->
+    <div class="product-section bottom-products">
+        <div class="container">
+            <div class="scroll-container">
+<!--                <button class="scroll-indicator-left">;</button>-->
+<!--                <button class="scroll-indicator-right">&#9654;</button>-->
+                <div class="row flex-nowrap">
+                    <!-- Product Card 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text">A sleek smartwatch with all the essential features for your lifestyle.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">A cutting-edge smartphone with the latest technology.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 7990.99</span>
+                                    <span class="discounted-price">Ksh 6990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Headphones</h5>
+                                <p class="card-text">High-quality headphones for a premium audio experience.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1990.99</span>
+                                    <span class="discounted-price">Ksh 1490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptop</h5>
+                                <p class="card-text">A powerful laptop with advanced features for all your needs.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 10990.99</span>
+                                    <span class="discounted-price">Ksh 8990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Bluetooth Speaker</h5>
+                                <p class="card-text">Enjoy high-quality sound with this portable Bluetooth speaker.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 1490.99</span>
+                                    <span class="discounted-price">Ksh 990.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-card card mb-4 shadow-sm">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Action Camera</h5>
+                                <p class="card-text">Capture your adventures with this high-definition action camera.</p>
+                                <div class="price">
+                                    <span class="original-price">Ksh 2990.99</span>
+                                    <span class="discounted-price">Ksh 2490.99</span>
+                                </div>
+                                <a href="add-to-cart.html" class="btn add-to-cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--          bottom product section end-->
+<!--          desktop section start-->
+
+<!--desktop section end-->
+
 <!--    <section id="testimonials" class="position-relative">-->
 <!--      <div class="container">-->
 <!--        <div class="row">-->
@@ -1018,13 +1536,69 @@
 <!--            </div>-->
 <!--          </div>-->
 <!--        </div>-->
-<!--      </div>-->
+<!--      </div>-->ME
 <!--    </div>-->
+
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+          <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const row = document.querySelector('.row.flex-nowrap');
+            const scrollLeftBtn = document.querySelector('.scroll-indicator-left');
+            const scrollRightBtn = document.querySelector('.scroll-indicator-right');
+
+            // Show/hide scroll indicators based on scroll position
+            function updateScrollIndicators() {
+                const maxScrollLeft = row.scrollWidth - row.clientWidth;
+                scrollLeftBtn.style.display = row.scrollLeft > 0 ? 'flex' : 'none';
+                scrollRightBtn.style.display = row.scrollLeft < maxScrollLeft ? 'flex' : 'none';
+            }
+
+            scrollLeftBtn.addEventListener('click', function () {
+                row.scrollBy({ left: -250, behavior: 'smooth' });
+                setTimeout(updateScrollIndicators, 300);
+            });
+
+            scrollRightBtn.addEventListener('click', function () {
+                row.scrollBy({ left: 250, behavior: 'smooth' });
+                setTimeout(updateScrollIndicators, 300);
+            });
+
+            row.addEventListener('scroll', updateScrollIndicators);
+
+            // Initialize scroll indicators
+            updateScrollIndicators();
+        });
+    </script>
+     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchButton = document.querySelector('.search-button'); // Your search button selector
+        var searchPopup = document.querySelector('.search-popup');
+        var closeButton = document.querySelector('.search-popup-close'); // Close button selector
+
+        searchButton.addEventListener('click', function() {
+            searchPopup.classList.add('is-visible');
+        });
+
+        closeButton.addEventListener('click', function() {
+            searchPopup.classList.remove('is-visible');
+        });
+
+        searchPopup.addEventListener('click', function(e) {
+            if (e.target === searchPopup) {
+                searchPopup.classList.remove('is-visible');
+            }
+        });
+    });
+</script>
   </body>
 </html>
