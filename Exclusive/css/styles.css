@@ -1357,6 +1357,103 @@ figure.instagram-item img.insta-image {
 .shopify-cart .table th {
     width: 30%;
 }
+ .banner {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height as needed */
+    overflow: hidden;
+    background-color: #f4f4f4; /* Background color in case of empty spaces */
+}
+.single-banner-container {
+    position: relative;
+    width: 100%; /* Full width of the viewport */
+    height: 60vh;/*40% of the viewport height *!*/
+    overflow: hidden;
+}
+
+.single-banner-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vw; /* 200% of the viewport width */
+    height: auto;
+    transform: translate(-50%, -50%); /* Center the image */
+    object-fit: cover; /* Cover the container */
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    text-align: left;
+}
+
+.banner-caption h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.banner-caption p {
+    font-size: 1em;
+    margin: 5px 0 0;
+}
+.responsive-banner {
+    position: relative;
+    width: 100%; /* Full width of the viewport */
+    height: 60vh; /* 40% of the viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.responsive-banner-image {
+    width: 100%; /* Scale image to full width */
+    height: 65vh; /* Adjust height to maintain aspect ratio */
+    display: block; /* Remove bottom margin/whitespace */
+    object-fit: cover; /* Ensures image covers the container */
+    object-position: center; /* Centers image within container */
+}
+
+@media (min-width: 1200px) {
+    .responsive-banner {
+        height: 50vh; /* Increase height for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-banner {
+        height: 35vh; /* Adjust height for mobile devices */
+    }
+}
+
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1200px) {
+    .single-banner-container {
+        height: 50vh; /* Increase height for larger screens */
+    }
+
+    .banner-caption {
+        font-size: 1.5em; /* Increase font size for better readability */
+        bottom: 40px; /* Adjust position if needed */
+        left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-banner-container {
+        height: 35vh; /* Adjust height for mobile devices */
+    }
+
+    .banner-caption {
+        font-size: 1em;
+        bottom: 15px;
+        left: 20px;
+    }
+}
 
 
 /* 11. Checkout Page
@@ -1580,32 +1677,66 @@ figure.instagram-item img.insta-image {
     color: #fff;
     text-decoration: none;
 }
-/*@media (max-width: 1000px) {*/
-/*    .coll-4 {*/
-/*        width: 20%;*/
-/*    }*/
-/*}*/
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+    .container {
+        padding: 10px; /* Adjust padding */
+    }
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+    }
+}
 
-/*@media (max-width: 600px) {*/
-/*    .coll-4 {*/
-/*        flex: 0 0 50%; !* 50% width for 2 items per roww *!*/
-/*    }*/
-/*}*/
+/* Styles for tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .header {
+        flex-direction: row; /* Horizontal layout for tablets */
+    }
+}
 
-/*@media (max-width: 750px) {*/
-/*    .coll-4 {*/
-/*        width: 100%;*/
-/*    }*/
-/*};*/
+/* Styles for larger screens */
+@media (min-width: 901px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+@media (max-width: 1000px) {
+    .coll-4 {
+        width: 20%;
+    }
+}
 
-/*}*/
+@media (max-width: 600px) {
+    .coll-4 {
+        flex: 0 0 50%; /* 50% width for 2 items per roww */
+    }
+}
+
+@media (max-width: 750px) {
+    .coll-4 {
+        width: 100%;
+    }
+};
+
+}
 
 
-/* Responsive styles for mobile phones */
-/*@media (max-width: 600px) { !* Target smaller screens such as phones *!*/
-/*    .coll-4 {*/
-/*        width: 90%; !* Change to 90% width for one item per roww on very small screens *!*/
-/*        margin: 5px; !* Reduce margin for tighter spacing *!*/
-/*    }*/
-/*}*/
+ Responsive styles for mobile phones
+@media (max-width: 600px) { /* Target smaller screens such as phones */
+    .coll-4 {
+        width: 90%; /* Change to 90% width for one item per roww on very small screens */
+        margin: 5px; /* Reduce margin for tighter spacing */
+    }
+}
 
