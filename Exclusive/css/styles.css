@@ -1782,7 +1782,8 @@ figure.instagram-item img.insta-image {
 }
 
 .contact-info {
-    margin: 0;
+    right: 1px;
+    margin: 1;
     font-size: 0.9rem; /* Smaller font size */
     letter-spacing: 0.5px;
 }
